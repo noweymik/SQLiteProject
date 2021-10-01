@@ -16,7 +16,7 @@ public class Main {
 			con = DriverManager.getConnection("jdbc:sqlite:"+dbFile);
 			
 			//데이터 조회
-			System.out.println("\n*** 데이타 조회 ***");
+			System.out.println("\n*** 데이터 조회 ***");
 			Statement stat1 = con.createStatement();
 			String sql1 = "select * from g_artists";
 			ResultSet rs1 = stat1.executeQuery(sql1);
